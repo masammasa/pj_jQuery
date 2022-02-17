@@ -18,6 +18,7 @@
 .detail{
     width: 50%;
     background-color: gainsboro;
+    padding: 2%;
 }
 
 .detail h2{
@@ -26,18 +27,31 @@
 
 .detailText-flex{
     display: flex;
-    border-right: solid,1px;
+   
 }
 
 dl{
     margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: solid 1px black;
+    text-align: start;
+    padding-right: 5%;
+    width: 40%;
 }
 
 dd{
     font-size: 0.9rem;
 }
 
-.detailText-flex p{
+.detailText{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.detailText p{
     font-size: 0.9rem;
 }
 .detail-link{
@@ -45,7 +59,7 @@ dd{
 }
 
 footer{
-    padding: 15px 0;
+    padding: 20px 0;
     text-align: center;
     font-size: 0.8rem;
 }
