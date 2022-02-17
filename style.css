@@ -1,0 +1,51 @@
+.img-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img-flex img{
+    width: 30%;
+    height: 25%;
+    margin: 2%;
+}
+
+.detailMain-flex{
+    display: flex;
+    justify-content: center;
+}
+
+.detail{
+    width: 50%;
+    background-color: gainsboro;
+}
+
+.detail h2{
+    text-align: center;
+}
+
+.detailText-flex{
+    display: flex;
+    border-right: solid,1px;
+}
+
+dl{
+    margin-right: 10%;
+}
+
+dd{
+    font-size: 0.9rem;
+}
+
+.detailText-flex p{
+    font-size: 0.9rem;
+}
+.detail-link{
+    color: #333;
+}
+
+footer{
+    padding: 15px 0;
+    text-align: center;
+    font-size: 0.8rem;
+}
