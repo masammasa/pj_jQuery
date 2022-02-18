@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="./reset.css"><link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
@@ -39,13 +39,36 @@
     </section>
     <section>
       <div class="img-flex">
-        <img src="https://i2.wp.com/blog.earthyworld.com/wp-content/uploads/2018/10/jojo1.jpg?fit=380%2C285&ssl=1"
-          alt="">
-        <img
-          src="https://renote.jp/files/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBei9JQWc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--0e27b03df10396c998c8553a33b3d6ab3b98e4c2/m292069.jpg"
-          alt="">
-        <img src="https://ronpet7.com/wp-content/uploads/jojo-3.jpg" alt="">
-        <img src="https://images.ciatr.jp/2017/06/w_640/ulfkfmvmBwA9Gv6yU8gKzepxElbWDDlevKEbhedH.jpeg" alt="">
+        <div class="sample-item"><a class="js-modal-open" data-target="modal01"><img src="https://i2.wp.com/blog.earthyworld.com/wp-content/uploads/2018/10/jojo1.jpg?fit=380%2C285&ssl=1" alt=""></a></div>
+        <div class="sample-item"><a class="js-modal-open" data-target="modal02"><img src="https://renote.jp/files/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBei9JQWc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--0e27b03df10396c998c8553a33b3d6ab3b98e4c2/m292069.jpg" alt=""></a></div>
+        <div class="sample-item"><a class="js-modal-open" data-target="modal03"><img src="https://ronpet7.com/wp-content/uploads/jojo-3.jpg" alt=""></a></div>
+        <div class="sample-item"><a class="js-modal-open" data-target="modal04"><img src="https://images.ciatr.jp/2017/06/w_640/ulfkfmvmBwA9Gv6yU8gKzepxElbWDDlevKEbhedH.jpeg" alt=""></a></div>
+      </div>
+      <div id="modal01" class="modal js-modal">
+        <div class="modal__bg js-modal-close"></div>
+        <div class="modal__content">
+          <img src="https://i2.wp.com/blog.earthyworld.com/wp-content/uploads/2018/10/jojo1.jpg?fit=380%2C285&ssl=1" alt="サンプル1">
+        </div>
+      </div>
+    
+      <div id="modal02" class="modal js-modal">
+        <div class="modal__bg js-modal-close"></div>
+        <div class="modal__content">
+          <img src="https://renote.jp/files/blobs/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBei9JQWc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--0e27b03df10396c998c8553a33b3d6ab3b98e4c2/m292069.jpg" alt="サンプル2">
+        </div>
+      </div>
+    
+      <div id="modal03" class="modal js-modal">
+        <div class="modal__bg js-modal-close"></div>
+        <div class="modal__content">
+          <img src="https://ronpet7.com/wp-content/uploads/jojo-3.jpg" alt="サンプル3">
+        </div>
+      </div>
+      <div id="modal04" class="modal js-modal">
+        <div class="modal__bg js-modal-close"></div>
+        <div class="modal__content">
+          <img src="https://images.ciatr.jp/2017/06/w_640/ulfkfmvmBwA9Gv6yU8gKzepxElbWDDlevKEbhedH.jpeg" alt="サンプル3">
+        </div>
       </div>
     </section>
     <section>
