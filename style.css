@@ -156,3 +156,100 @@ body{
     justify-content: center;
   }
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* アコーディオン */
+ .question,.answer{
+     padding: 10px;
+     background-color: blueviolet;
+     color: white;
+     border: solid 1px;
+ }
+
+ .question{
+     display: flex;
+    justify-content: space-between;
+     align-items: center;
+     cursor: pointer;
+ }
+
+ i{
+     font-size: 1.2rem;
+     margin-right: 10px;
+ }
+
+ i:hover{
+     opacity: 0.7;
+ }
+
+ /* .question::after,.question::before{
+    content: '';
+    display: block;
+    background-color: white;
+    position: absolute;
+  }
+
+  .question::after{
+    width: 20px;
+    height: 2px;
+    right: 10px;
+    top: 50%;
+  }
+
+  .question::before{
+    width: 2px;
+    height: 20px;
+    right: 19px;
+    top: 30%;
+  }
+
+  .question.on::before{
+    display: none;
+  } */
+
+  .answer{
+    display: none;
+    background-color: rgb(230, 160, 75);
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+  }

@@ -19,4 +19,48 @@ $(function(){
         $('.js-modal').fadeOut();
         return false;
       })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// アコーディオン
+$('.question').on('click',function(){
+    $(this).next().slideToggle();
+    $(this).toggleClass('on')
+})
+
 })
