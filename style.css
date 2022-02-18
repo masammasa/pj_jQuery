@@ -132,6 +132,23 @@ img {
   transform: translate(-50%,-50%);
   width: 70%;
 }
+.onText{
+  position: relative;
+}
+.onText:hover img{
+  opacity: 0.3;
+}
+.onText:hover::before{
+  content: "テキスト";
+  font-size: 4rem;
+  letter-spacing: 2rem;
+  font-weight: bold;
+  color: aliceblue;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
 
 /* テスト */
 /* .onText{
