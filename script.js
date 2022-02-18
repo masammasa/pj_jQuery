@@ -63,4 +63,7 @@ $('.question').on('click',function(){
     $(this).toggleClass('on')
 })
 
+    $(".topBtn").on("click",function(){
+      $("body,html").animate({"scrollTop":0},1000)
+    })
 })
