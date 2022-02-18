@@ -1,6 +1,6 @@
-main{
-    background-color: lightslategray;
-    padding-bottom: 10px;
+
+body{
+  background-color: lightseagreen;
 }
 
 section{
@@ -13,6 +13,12 @@ section{
 }
 .photoBook2{
   width: 80vw;
+}
+.top{
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Rampart One', cursive;
+  font-size: 25px;
 }
 header{
   height: 20px;
