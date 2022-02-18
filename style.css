@@ -134,6 +134,7 @@ img {
 }
 .onText{
   position: relative;
+  margin-top: 2%;
 }
 .onText:hover img{
   opacity: 0.3;
@@ -148,6 +149,16 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+}
+.topBtn{
+  background-color: gray;
+  padding: 1%;
+  width: 8%;
+  text-align: center;
+}
+.topBtnOuter{
+  display: flex;
+  justify-content: center;
 }
 
 /* テスト */
