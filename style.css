@@ -56,45 +56,7 @@ body{
   .sample-item{
     margin: 2%;
   }
-  /* .detailMain-flex{
-    display: flex;
-    justify-content: center;
-  } */
-  /* .detail{
-    width: 50%;
-    background-color: gainsboro;
-    padding: 2%;
-  }
-  .detail h2{
-    text-align: center;
-  }
-  .detailText-flex{
-    display: flex;
-  }
-  dl{
-    margin-right: 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-right: solid 1px black;
-    text-align: start;
-    padding-right: 5%;
-    width: 40%;
-  }
-  dd{
-    font-size: 0.9rem;
-  }
-  .detailText{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .detailText p{
-    font-size: 0.9rem;
-  }
-  .detail-link{
-    color: #333;
-  } */
+ 
   footer{
     padding: 20px 0;
     text-align: center;
