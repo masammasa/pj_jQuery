@@ -20,6 +20,24 @@ $(function(){
         return false;
       })
 
+    //   スライド
+      let index = 0;
+      let slideMax = $('.slide').length
+      $('.right-arrow').on('click',function () {
+        if (index !== slideMax-1) {
+          index++;
+          num = index * -1 * 100;
+          $('.slide-container').css({'transform':`translateX(${num}%)`})
+        }
+      })
+    
+      $('.left-arrow').on('click',function () {
+        if (index !== 0) {
+          index--;
+          num = index * -1 * 100;
+          $('.slide-container').css({'transform':`translateX(${num}%)`})
+        }
+      })
 
 
 
