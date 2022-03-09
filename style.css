@@ -57,11 +57,6 @@ body{
     margin: 2%;
   }
  
-  footer{
-    padding: 20px 0;
-    text-align: center;
-    font-size: 0.8rem;
-  }
   img {
     width: 100%;
   }
@@ -89,6 +84,8 @@ body{
     transform: translate(-50%,-50%);
     width: 70%;
   }
+
+  /* メインイメージにホバーで文字が出る */
   .onText{
     position: relative;
     margin-top: 2%;
@@ -107,141 +104,8 @@ body{
     left: 50%;
     transform: translate(-50%,-50%);
   }
-  .topBtn{
-    background-color: gray;
-    padding: 1%;
-    width: 8%;
-    text-align: center;
-  }
-  .topBtnOuter{
-    display: flex;
-    justify-content: center;
-  }
-
-  /* スライド */
-  .slide-container{
-    display: flex;
-    width: 100%;
-    /* height: 600px; */
-    transition: all 1s ease;
-  }
+   /* メインイメージにホバーで文字が出る */
   
-  .container-wrap{
-    width: 100%;
-    overflow-x: hidden;
-    position: relative;
-    background-color: purple;
-  }
-  
-  .left-arrow,.right-arrow{
-    cursor: pointer;
-  }
-
-  .left-arrow:hover,.right-arrow:hover{
-opacity: 0.7;
-  }
-  
-  .left-arrow{
-    content: '';
-    width: 20px;
-    height: 20px;
-    border-bottom: solid 8px rgb(255, 0, 0);
-    border-right: solid 8px rgb(255, 0, 0);
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    left: 30px;
-    transform: rotate(134deg);
-  }
-  
-  .right-arrow{
-    content: '';
-    width: 20px;
-    height: 20px;
-    border-bottom: solid 8px rgb(255, 0, 0);
-    border-right: solid 8px rgba(255, 0, 0);
-    position: absolute;
-    top: 50%;
-    right: 30px;
-    transform: rotate(-45deg);
-    z-index: 1;
-  }
-  
-  .slide{
-    min-width: 100%;
-    text-align: center;
-    font-size: 40px;
-    /* padding-top: 300px; */
-  }
-
-  .slide p{
-      margin-bottom: 3%;
-  }
-
-  .slide img{
-      width: 50%;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- /* アコーディオン */
- .question,.answer{
-     padding: 10px;
-     background-color: blueviolet;
-     color: white;
-     border: solid 1px;
- }
-
- .question{
-     display: flex;
-    justify-content: space-between;
-     align-items: center;
-     cursor: pointer;
- }
-
- i{
-     font-size: 1.2rem;
-     margin-right: 10px;
- }
-
- i:hover{
-     opacity: 0.7;
- }
-
  /* .question::after,.question::before{
     content: '';
     display: block;
@@ -266,14 +130,6 @@ opacity: 0.7;
   .question.on::before{
     display: none;
   } */
-
-  .answer{
-    display: none;
-    background-color: rgb(230, 160, 75);
-    width: 100%;
-    box-sizing: border-box;
-    outline: none;
-  }
 
   /* Loading背景画面設定　*/
 #splash {
@@ -322,3 +178,189 @@ opacity: 0;
   transform: translateY(0);
   }
 }
+
+ /* スライド */
+ .slide-container{
+  display: flex;
+  width: 100%;
+  transition: all 1s ease;
+}
+
+.container-wrap{
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  background-color: purple;
+}
+
+.left-arrow,.right-arrow{
+  cursor: pointer;
+}
+
+.left-arrow:hover,.right-arrow:hover{
+opacity: 0.7;
+}
+
+.left-arrow{
+  content: '';
+  width: 20px;
+  height: 20px;
+  border-bottom: solid 8px rgb(255, 0, 0);
+  border-right: solid 8px rgb(255, 0, 0);
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 30px;
+  transform: rotate(134deg);
+}
+
+.right-arrow{
+  content: '';
+  width: 20px;
+  height: 20px;
+  border-bottom: solid 8px rgb(255, 0, 0);
+  border-right: solid 8px rgba(255, 0, 0);
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: rotate(-45deg);
+  z-index: 1;
+}
+
+.slide{
+  min-width: 100%;
+  text-align: center;
+  font-size: 40px;
+}
+
+.slide p{
+    margin-bottom: 3%;
+}
+
+.slide img{
+    width: 50%;
+}
+/* スライド終わり */
+
+
+ /* アコーディオン */
+ .question,.answer{
+  padding: 10px;
+  background-color: blueviolet;
+  color: white;
+  border: solid 1px;
+}
+
+.question{
+  display: flex;
+ justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+i{
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+i:hover{
+  opacity: 0.7;
+}
+
+.answer{
+  display: none;
+  background-color: rgb(230, 160, 75);
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+}
+/* アコーディオン終わり */
+
+/* トップに戻るボタン */
+.topBtn{
+  background-color: gray;
+  padding: 1%;
+  width: 8%;
+  text-align: center;
+  border-radius: 10px;
+}
+.topBtnOuter{
+  display: flex;
+  justify-content: center;
+}
+/* トップに戻るボタン終わり */
+
+/* フッター */
+footer{
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width:780px) {
+  /* ハンバーガーメニュー */
+  .drawer-nav{
+    width: 9rem;
+    opacity: 0.8;
+  }
+
+  .drawer--left.drawer-open .drawer-hamburger{
+    left: 9rem;
+  }
+/* メインイメージ */
+  .top{
+    /* display: flex; */
+    /* justify-content: space-around; */
+    margin: 0 10px;
+    font-size: 25px;
+    color: aqua;
+  }
+
+ .onText{
+   margin-top: 10%;
+ }
+
+#topImg{
+  width: 100%;
+}
+
+/*メインイメージ ホバー */
+
+.onText:hover img{
+  opacity: 0.3;
+}
+.onText:hover::before{
+  content: "テキスト";
+  font-size: 1rem;
+  letter-spacing: 1rem;
+  font-weight: bold;
+  color: rgb(17, 72, 121);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.img-flex{
+  display: flex;
+  flex-direction: column;
+align-items: center;
+}
+
+.sample-item{
+  width: 75%;
+}
+
+
+/* 作品紹介 数字はみ出てる？ */
+.list ol{
+  list-style-position: inside;
+}
+/* スライド わからん */
+/* TOP戻るボタン */
+.topBtn{
+  padding: 3%;
+  width: 20%;
+}
+}
+
